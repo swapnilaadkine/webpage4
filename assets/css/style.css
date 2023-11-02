@@ -1,0 +1,638 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+/* header section start */
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background: #131E3A;
+    display: flex;
+    padding: 20px 125px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul li{
+    margin-right: 15px;
+    display: inline-block;
+    font-weight: bold;
+}
+header ul li a.active{
+    color: #CD3750;
+}
+/* header section ends */
+
+
+
+
+/* banner section start */
+
+.banner{
+    width: 100%;
+    height: 502px;
+    padding: 0px 125px;
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)), url('../img/back.jpg');
+    background-size: 95% 100%;
+    position: relative;
+}
+.banner h1{
+    position: absolute;
+     top: 50px;
+    font-weight: 400;
+    font-size: 50px;
+}
+.banner h2{
+    position: absolute;
+    top: 160px;
+    padding-top: 18px;
+    font-size: 30px;
+}
+.banner form{
+    width: 80%;
+    height: 100px;
+    padding: 6px 9px;
+    position: absolute;
+    bottom: 20px;
+    background: #5C327A;
+}
+.banner form button{
+   width: 100px;
+   height: 28px;
+   border: none;
+   background: #43215c;
+   color: #fff;
+   font-weight: 700;
+}
+.banner form button.active{
+    background: rgb(226, 38, 70);
+}
+.banner form label{
+    display: none;
+}
+.banner form .searchform{
+    margin-top: 8px;
+}
+.banner form .searchform input,
+.banner form .searchform select
+{
+    width: 150px;
+    height: 23px;
+    margin-right: 5px;
+}
+.banner form button.smt{
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 65px;
+    margin-top: -23px;
+    background: rgb(226, 38, 70);
+    font-size: 17px;
+    font-weight: 400;
+}
+.banner form a select{
+    border: none;
+    background: transparent;
+    margin-top: 10px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.banner form a {
+    margin-right:16px;
+}
+/* banner section send */
+
+
+/* fun section start */
+
+.fun{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.10)), url(../img/travel-img.jpg);
+    width: 100%;
+    height: 400px;
+    padding: 50px 120px;
+    background-size: 100% 100%;
+}
+.fun h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.fun ul{
+    display: flex;
+    justify-content: space-between;
+}
+.fun ul li{
+    width: 130px;
+    height: 125px;
+    color: #fff;
+    text-align: center;
+    list-style: none;
+    font-size: 48px;
+    padding-top: 23px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.fun ul li span{
+    font-size: 12px;
+    display: block;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+/* fun section end */
+
+/* newslatter section start */
+
+.newslatter{
+    width: 100%;
+    height: 250px;
+    padding: 50px 125px;
+    color: #fff;
+    background: #43215c;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)), url(../img/airplane-flying-above-clouds_shutterstock_553131187.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.newslatter label{
+    display: none;
+}
+.newslatter{
+    padding-left: 400px;
+    text-align: center;
+}
+.newslatter h2, p{
+    margin-top: 15px;
+}
+.newslatter form{
+    margin-top: 22px;
+}
+.newslatter input{
+    width: 65%;
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.newslatter input::placeholder{
+    color: #fff;
+}
+.newslatter button{
+    width: 14%;
+    height: 40px;
+    margin-left: 10px;
+}
+/* newslatter section end */
+
+
+/* destination section start */
+.destination{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 50px 125px;
+    background: #20162F;
+}
+.destination h2{
+    margin-bottom: 40px;
+}
+h2{
+    text-align: center;
+    color: #fff;
+}
+.destination ul{
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    grid-template-rows: 270px 290px;
+    grid-gap: 30px 60px;
+}
+.destination ul li{ 
+    text-align: center;
+    border: 5px solid #fff;
+    color: #20162F;
+    border-radius: 5px;
+    list-style: none;
+}
+.destination ul li img{
+    width: 100%;
+    height: 50%;
+}
+.destination ul li {
+    background: #fff;
+}
+.destination ul li .content{
+    padding: 5px;
+    font-size: 17px;
+}
+.destination ul li .content h5 span{
+    color: gold;
+}
+.destination ul li .content h6{
+    margin-top: 15px;
+    font-size: 12px;
+}
+/* destination section end */
+
+/* estimate section start */
+
+.estimate{
+    width: 100%;
+    height: 200px;
+    padding: 50px 125px;
+    background-color: #664CAD;
+    position: relative;
+}
+.estimate img{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 300px;
+    height: 200px;
+}
+.estimate label{
+    display: none;
+}
+.estimate h2{
+    position: absolute;
+    margin-top: 0px;
+    font-weight: 550;
+}
+.estimate h3{
+    margin-top: 27px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.estimate hr{
+    width: 6%;
+    margin-top: 10px;
+}
+.estimate form{
+    margin-top: 20px;
+    margin-left: -12px;
+}
+.estimate form select, input{
+    height: 30px;
+    width: 15%;
+    margin-left: 10px;
+}
+/* estimate section end */
+
+/* blog section start */
+
+.blog{
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+}
+.blog h2{
+    margin-bottom: 12px;
+    color: #000;
+}
+.blog h2{
+    padding: 0px 200px;
+    text-align: center;
+}
+.blog p{
+    text-align: center;
+}
+.blog-content{
+    display: flex;
+    margin: 10px auto;
+}
+.blog-content div{
+    display: flex;
+    padding: 10px;
+}
+.blog-content div img{
+    width: 150px;
+    height: 150px;
+    margin-top: 22px;
+}
+.blog-content div div{
+    display: inline-block;
+    margin-top: 12px;
+}
+.blog-content div div h5{
+    margin-top: 15px;
+}
+.blog-content div .bdr{
+    border-bottom: 6px solid red ;
+}
+/* blog section end */
+
+/* footer section start */
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+    background: #1F1C27;
+}
+footer .topfoot, footer .bottomfooter{
+    display: flex;
+    justify-content: space-between;
+}
+footer h3{
+    color: #918E97;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    color: #918E97;
+}
+footer ul li a span{
+    color: #fff;
+    font-weight: 500;
+}
+footer .international div{
+    display: flex;
+    justify-content: space-between;
+}
+footer .international div .inter1{
+    margin-right: 50px;
+}
+footer .bottomfooter .footmenu ul li{
+    display: inline-block;
+}
+.social ul li{
+    float: left;
+}
+.bottomfooter{
+    margin-top: 50px;
+}
+.bottomfooter p{
+    margin-top:4px;
+    color: #918E97;
+}
+.bottomfooter ul li{
+    padding: 0px 10px;
+}
+.social ul li a {
+    font-size: 28px;
+    color: skyblue;
+}
+/* footer section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive section start */
+
+@media screen and (max-width:1199px) {
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate,
+    .blog, footer{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .banner form {
+        width: 86%;
+    }
+    .banner form .searchForm input, 
+    .banner form .searchForm select {
+        width: 17%;
+    }
+    .banner form button.smt {
+        float: right !important;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .fun ul li {
+        width: 105px;
+        height: 115px;
+        font-size: 35px;
+    }
+    .blog-content {
+        display: block;
+    }
+    footer .topfoot .left,
+    footer .topfoot .right{
+        display: block;
+    }
+    .banner form {
+         width: 90%;
+         height: 40%;     
+}
+     .banner form .switchbutton{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+     }
+     .banner form .switchbutton button{
+        width: 30%;
+     }
+     .banner form  input,
+     .banner form  select{
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+    .banner form button.smt{
+        width: 70%;
+        height: 25px;
+        border-radius: 9px;
+        font-size: 18px;
+        margin-top: 90px;
+        margin-left: -70px;
+    }
+    .destination {
+        padding-left: 60px;
+        padding-right: 150px;
+    }
+    .destination ul {
+        grid-template-columns: repeat(3, 47%);
+        grid-template-rows: 270px 300px 290px 270px;
+        width: 70%;
+    }
+    
+    .estimate input.cv{
+        display: block;
+        margin-top: 5px;
+        display: flex;
+        width: 40%;
+        height: 10%;
+        font-size: 14px;
+        margin-left: 14%;
+    }
+}
+     
+
+@media screen and (max-width:767px){
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate,
+    .blog, footer{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    header .nav{
+        display: none;
+    }
+    .banner{
+        height: 480px;
+    }
+    .banner h1{
+        font-size: 30px;
+        margin-top: -35px;
+    }
+    .banner h2{
+        font-size: 20px;
+        margin-top: -80px;
+    }
+    .banner form {
+        width: 40%;
+        height: auto;
+        margin-right: 50px;
+        margin-bottom: -6px;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        left: 25%;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+    .banner .switchbutton{
+        display: flex;
+    }
+    .banner form select {
+        margin-left: 0px;
+    }
+    .banner .switchbutton button{
+        margin-left: 5px;
+    }
+    .banner form .searchForm input, 
+    .banner form .searchForm select {
+        display: block;
+        width: 100%;
+    }
+    .banner form .searchForm span{
+        display: none;
+    }
+    .banner form a{
+        display: inline-block;
+       margin-top: 5px;
+       margin-left: 10px;
+    }
+    .banner form .searchForm span{
+        display: none;
+    }
+    .banner form button.smt {
+        width: 60px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 45%;
+        font-size: 15px;
+    }
+    .fun ul {
+        margin-left: 8%;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 130px 130px;
+        grid-gap: 10px;
+    }
+    .newslatter{
+        width: 100%;
+        height: auto;
+    }
+    .newslatter form input{
+        text-align: center;
+        margin-left: 17%;
+    }
+    .newslatter form button{
+        width: 30%;
+        height: 26px;
+        border-radius: 15px;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+    .destination ul {
+        grid-template-columns: repeat(2, 47%);
+        grid-template-rows: 270px 270px 290px 270px;
+        width: 100%;
+    }
+    .estimate{
+        width: 100%;
+        height: auto;
+    }
+    .estimate h2{        
+      font-size: 20px;
+      margin-top: -40px;
+    }
+    .estimate h3{
+        font-size: 15px;
+        margin-top: -15px;
+    }
+    .estimate hr{
+        margin-top: 6px;
+    }
+    .estimate input.cv{
+        margin-left: 10px;
+        width: 48.50%;
+    }
+    .estimate form select, input{
+        display: block;
+        width: 48%;
+        margin-top: 10px;
+    }
+    .estimate img{
+        width: 52%;
+        height: 100%;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width:575px){
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate{
+        padding-left: 50px;
+        padding-right: 80px;
+    }
+    .banner form{
+        width: 55%;
+        height: auto;
+        margin-right: 50px;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        left: 25%;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+   .banner form button.smt{
+    margin-left: 30px;
+    margin-bottom: 0px;
+    width: 50px;
+    height: 40px;
+    font-size: 13px;
+   }
+   .banner form span{
+    display: none;
+   }
+}
+
+/* responsive section end */
