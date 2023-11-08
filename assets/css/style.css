@@ -735,4 +735,51 @@ footer .bottomfooter .footmenu ul li{
        }
 }
 
+@media screen and (max-width:440px){
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate{
+        padding-left: 50px;
+        padding-right: 80px;
+    }
+    header ul li{
+        display: none;
+    }
+   .banner h1,
+   .banner h2{
+    margin-left: 80px;
+   }
+    .banner form{
+        height: 70%;
+        width: 50%;
+        margin-left: 50px;
+    }
+    .banner form  select{
+        margin-left: -20px;
+        margin-top: 2px;
+      }
+      .banner form a i{
+        display: none;
+      }
+      .destination .content{
+        margin-top: 5px;
+      }
+      .estimate input.cv{
+        width: 50%;
+        margin-left: 15px;
+        font-size: 17px;
+      }
+      .blog h2{
+        margin-left: -100px;
+      }
+      footer .topfoot{
+        text-align: center;
+      }
+      .bottomfooter div img{
+        margin-top: 10px;
+        width: 60px;
+        height: 50px;
+       }
+}
+
 /* responsive section end */
