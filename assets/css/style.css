@@ -69,6 +69,7 @@ header ul li a.active{
    background: #43215c;
    color: #fff;
    font-weight: 700;
+
 }
 .banner form button.active{
     background: rgb(226, 38, 70);
@@ -91,7 +92,7 @@ header ul li a.active{
     width: 80px;
     height: 70px;
     border-radius: 50%;
-    margin-left: 65px;
+    margin-left: 15px;
     margin-top: -23px;
     background: rgb(226, 38, 70);
     font-size: 17px;
@@ -401,7 +402,7 @@ footer .bottomfooter .footmenu ul li{
 
 /* responsive section start */
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width:1200px) {
     header,.banner,
     .fun, .newslatter,
     .destination, .estimate,
@@ -422,11 +423,33 @@ footer .bottomfooter .footmenu ul li{
     }
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:992px) {
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate,
+    .blog, footer{
+        padding-left:10px;
+        padding-right:100px;
+    }
+    header{
+        padding-right: 100px;
+    }
+    header ul li{
+        font-size: 20px;
+    }
+    .fun{
+        height: auto;
+    }
+    .fun ul{
+        display: block;
+        margin-left: 30%;
+    }
     .fun ul li {
-        width: 105px;
-        height: 115px;
+        width: 70%;
+        height: 125px;
         font-size: 35px;
+        margin-top: 10px;
+        margin-left: 10px;
     }
     .blog-content {
         display: block;
@@ -436,13 +459,11 @@ footer .bottomfooter .footmenu ul li{
         display: block;
     }
     .banner form {
-         width: 90%;
-         height: 40%;     
-}
+         width: 70%;  
+         height: 60%;
+    }
      .banner form .switchbutton{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        width: 110%;
      }
      .banner form .switchbutton button{
         width: 30%;
@@ -453,23 +474,41 @@ footer .bottomfooter .footmenu ul li{
       margin-left: 0px;
     }
     .banner form button.smt{
-        width: 70%;
+        width: 50%;
         height: 25px;
         border-radius: 9px;
         font-size: 18px;
-        margin-top: 90px;
-        margin-left: -70px;
+        margin-top: 85px; 
+        margin-left: 20px;       
+    }
+    .newslatter{
+        height: auto;
+    }
+    .newslatter form input{
+        margin-left: 15%;
+    }
+    .newslatter form button{
+        margin-top: 10px;
     }
     .destination {
-        padding-left: 60px;
-        padding-right: 150px;
+        padding-left:20%;
+    }
+    .destination h2{
+        margin-left: -150px;
     }
     .destination ul {
-        grid-template-columns: repeat(3, 47%);
-        grid-template-rows: 270px 300px 290px 270px;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 350px 350px 350px 370px;
         width: 70%;
     }
-    
+    .estimate{
+        height: auto;
+    }
+    .estimate form select,input{
+        display: block;
+        width: 55%;
+        margin-top: 10px;
+    }
     .estimate input.cv{
         display: block;
         margin-top: 5px;
@@ -477,7 +516,43 @@ footer .bottomfooter .footmenu ul li{
         width: 40%;
         height: 10%;
         font-size: 14px;
-        margin-left: 14%;
+        margin-left: 90px;
+        margin-top: 20px;
+        margin-bottom: -15px;
+        border-radius: 20px;
+    }
+    .fun ul {
+        margin-left: 8%;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 130px 200px;
+        grid-gap: 5px;
+    }
+    .estimate img{
+        width: 40%;
+        height: 100%;
+    }
+    footer{
+        position: relative;
+    }
+    footer .topfoot{
+        display: block;
+        padding-left: 22%;
+    }
+    footer .topfoot h3, ul li{
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    footer .social{
+     position: absolute;
+     bottom: 0px;
+     left: 35%;
+     font-size: 50px;
+    }
+    footer .social ul li a {
+        font-size: 50px;
+        display: flex;
+        margin-left: 30px;
     }
 }
      
@@ -487,152 +562,177 @@ footer .bottomfooter .footmenu ul li{
     .fun, .newslatter,
     .destination, .estimate,
     .blog, footer{
-        padding-left:20px;
-        padding-right:20px;
+        padding-left:50px;
+        padding-right:50px;
     }
-    header .nav{
-        display: none;
-    }
-    .banner{
-        height: 480px;
-    }
-    .banner h1{
-        font-size: 30px;
-        margin-top: -35px;
-    }
-    .banner h2{
-        font-size: 20px;
-        margin-top: -80px;
-    }
-    .banner form {
-        width: 40%;
+    header{
         height: auto;
-        margin-right: 50px;
-        margin-bottom: -6px;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        left: 25%;
-        border-radius: 5px;
-        flex-direction: column;
+        text-align: center;
     }
-    .banner .switchbutton{
-        display: flex;
-    }
-    .banner form select {
-        margin-left: 0px;
-    }
-    .banner .switchbutton button{
-        margin-left: 5px;
-    }
-    .banner form .searchForm input, 
-    .banner form .searchForm select {
+    header ul li{
+        font-size: 18px;
+        padding-right: 20px;
         display: block;
-        width: 100%;
     }
-    .banner form .searchForm span{
-        display: none;
-    }
-    .banner form a{
-        display: inline-block;
-       margin-top: 5px;
-       margin-left: 10px;
-    }
-    .banner form .searchForm span{
-        display: none;
-    }
-    .banner form button.smt {
-        width: 60px;
-        height: 50px;
-        border-radius: 50%;
-        margin-top: 45%;
-        font-size: 15px;
+    .banner h1,h2{
+        font-size: 30px;
     }
     .fun ul {
         margin-left: 8%;
         display: grid;
-        grid-template-columns: repeat(3, 33%);
-        grid-template-rows: 130px 130px;
-        grid-gap: 10px;
-    }
-    .newslatter{
-        width: 100%;
-        height: auto;
-    }
-    .newslatter form input{
-        text-align: center;
-        margin-left: 17%;
-    }
-    .newslatter form button{
-        width: 30%;
-        height: 26px;
-        border-radius: 15px;
-        margin-top: 10px;
-        margin-left: -20px;
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: 170px 170px;
+        grid-gap: -10px;
     }
     .destination ul {
-        grid-template-columns: repeat(2, 47%);
-        grid-template-rows: 270px 270px 290px 270px;
-        width: 100%;
+        padding-left: 50px;
+        width: 80%;
     }
-    .estimate{
-        width: 100%;
-        height: auto;
-    }
-    .estimate h2{        
-      font-size: 20px;
-      margin-top: -40px;
-    }
-    .estimate h3{
-        font-size: 15px;
-        margin-top: -15px;
-    }
-    .estimate hr{
-        margin-top: 6px;
-    }
-    .estimate input.cv{
-        margin-left: 10px;
-        width: 48.50%;
-    }
-    .estimate form select, input{
-        display: block;
-        width: 48%;
-        margin-top: 10px;
-    }
-    .estimate img{
-        width: 52%;
-        height: 100%;
-        margin-bottom: 0px;
+    .destination h2{
+        margin-left: 3px;
     }
 }
-@media screen and (max-width:575px){
+@media screen and (max-width:576px){
     header,.banner,
     .fun, .newslatter,
     .destination, .estimate{
         padding-left: 50px;
         padding-right: 80px;
     }
-    .banner form{
-        width: 55%;
-        height: auto;
-        margin-right: 50px;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-        left: 25%;
-        border-radius: 5px;
-        flex-direction: column;
+    header ul li{
+        display: none;
     }
-   .banner form button.smt{
-    margin-left: 30px;
-    margin-bottom: 0px;
-    width: 50px;
-    height: 40px;
-    font-size: 13px;
-   }
-   .banner form span{
-    display: none;
-   }
+    .banner{
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+    .banner h1{
+        margin-top: -50px;
+        font-size: 17px;
+        margin-left: 120px;
+    }
+    .banner h2{
+        margin-top: -135px;
+        font-size: 14px;
+        margin-left: 120px;
+    }
+    .banner form{
+        width: 40%;
+        height: 70%;
+        margin-left: 20%;
+    }
+    .banner form .switchbutton button{
+        display: block;
+        width: 90%;
+        height: 13px;
+        margin-top: 5px;
+    }
+    .banner form span{
+        display: none;
+    }
+    .banner form  input{
+      margin-left: 12px;
+      width: 200%;
+      margin-top: 2px;
+    }
+    .banner form  select{
+      margin-left: 3px;
+      margin-top: 2px;
+    }
+    .banner form a{
+        display: block;
+        margin-top: -2px;
+    }
+    .banner form button.smt{
+        margin-left: -135px;
+        margin-top: 155px;
+    }
+    .fun ul {
+        margin-left: 25%;
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        grid-template-rows: 140px 140px;
+        grid-gap: -10px;
+    }
+    .fun h2{
+        font-size: 22px;
+    }
+    .newslatter input{
+        width: 75%;
+    }
+    .newslatter button{
+        width: 30%;
+        border-radius: 5px;
+    }
+    .destination ul li img{
+        height: 80%;
+    }
+    .destination .content h5,h6{
+        font-size: 15px;
+    }
+    .destination .content{
+        margin-top: -60px;
+        font-size: 20px;
+    }
+    .destination h2{
+        margin-left: 25px;
+    }
+    .destination ul {
+        grid-template-columns: repeat(1, 150%);
+        grid-template-rows: 320px 300px 310px 300px;
+        width: 70%;
+    }
+    .estimate h2{
+        font-size: 16px;
+    }
+    .estimate h3{
+        font-size: 12px;
+    }
+    .estimate select{
+        width: 10%;
+    }
+    .estimate input.cv{
+        margin-left: 40px;
+        color: #fff;
+    }
+    footer{
+        position: relative;
+    }
+    footer .topfoot{
+        display: inline;
+        padding-left: 5%;
+    }
+    footer .topfoot h3, ul li{
+        font-size: 20px;
+    }
+    footer .topfoot h3, ul{
+        margin-top: 20px;
+    }
+    footer .social{
+        position: absolute;
+        bottom: 0px;
+        left: 35%;
+        font-size: 50px;
+       }
+       footer .social ul li a {
+           font-size: 25px;
+           display: flex;
+           margin-left: 7px;
+       }
+       .bottomfooter div img{
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+       }
+       .footmenu ul li a{
+        font-size: 15px;
+        display: block;
+       }
+       .footmenu p{
+        font-size: 12px;
+        display: inline;
+       }
 }
 
 /* responsive section end */
