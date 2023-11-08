@@ -781,5 +781,31 @@ footer .bottomfooter .footmenu ul li{
         height: 50px;
        }
 }
+@media screen and (max-width:368px){
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate{
+        padding-left: 50px;
+        padding-right: 80px;
+    }
+    .banner h2{
+     margin-top: -30%; 
+    }
+    .banner h1{
+        margin-top: -20px;
+    }
+    .banner form{
+        height: 75%;
+    }
+    .banner form select{
+        margin-left: 8%;
+    }
+    .banner form button.smt{
+      margin-left: -50px;
+      margin-top: 150px;
+    }
+    .newslatter h2, p {
+        margin-left:12%;
+    }
 
 /* responsive section end */
